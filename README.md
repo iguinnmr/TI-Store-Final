@@ -28,4 +28,4 @@ Para visualizar este projeto em sua máquina local, siga os passos abaixo:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/iguinnmr/TI-Store-Final.git
+https://github.com/iguinnmr/TI-Store-Final.git

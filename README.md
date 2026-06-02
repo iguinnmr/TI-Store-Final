@@ -24,10 +24,6 @@ O sistema foi construído utilizando as seguintes tecnologias:
 
 ## Instruções para Execução
 
-Para visualizar este projeto em sua máquina local, copie o link do repositório:
-```bash
-https://github.com/iguinnmr/TI-Store-Final.git
-
 Para visualizar o site em sua máquina local, copie o link do site:
 ```bash
 https://ti-store-final.vercel.app/

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TI Store | Produtos</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        /* Centralizando o CRUD */
+        #crud-produtos {
+            max-width: 900px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        #crud-produtos form input {
+            margin: 5px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #crud-produtos form button {
+            margin: 5px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        #crud-produtos table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #crud-produtos table th,
+        #crud-produtos table td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        #crud-produtos table th {
+            background-color: #f2f2f2;
+        }
+
+        #crud-produtos table img {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="TI Store.png" alt="TI Store" class="logo">
+        <hr>
+    </header>
+
+    <nav>
+        <a href="index.html" class="botao">Início</a>
+        <a href="pagina_produtos.html" class="botao">Produtos</a>
+        <a href="pagina_carrinho.html" class="botao">Carrinho</a>
+        <a href="pagina_faleconosco.html" class="botao">Fale Conosco</a>
+    </nav>
+
+    <h2>Nossos produtos</h2>
+
+    <div class="container">
+        <div class="produto">
+            <img src="iphone17PM.png">
+            <p><b>Iphone 17 Pro Max</b></p>
+            <p>Desempenho de alto nível, tela ampla e sistema de câmeras avançado para fotos e vídeos de alta qualidade.
+                Disponível com opções amplas de armazenamento (até 1 TB), oferece espaço de sobra para apps, fotos,
+                vídeos e arquivos, tudo em um design premium e rápido para o uso diário.</p>
+            <a href="pagina_carrinho.html#p1" class="botao">Adicionar ao Carrinho</a>
+        </div>
+
+        <div class="produto">
+            <img src="iphoneAIR.png">
+            <p><b>Iphone AIR</b></p>
+            <p>O iPhone Air se destaca pelo design ultrafino e leve, pensado para quem busca elegância e conforto no
+                uso. Com desempenho eficiente, ele é ideal para o uso no dia a dia. Disponível em diferentes opções de
+                armazenamento, oferece uma experiência moderna em um smartphone compacto e sofisticado.</p>
+            <a href="pagina_carrinho.html#p2" class="botao">Adicionar ao Carrinho</a>
+        </div>
+
+        <div class="produto">
+            <img src="iphone16PM.png">
+            <p><b>Iphone 16 Pro Max</b></p>
+            <p>Desempenho poderoso, tela ampla de alta qualidade e câmeras avançadas para fotos e vídeos
+                impressionantes. Disponível com opções de armazenamento de até 1 TB, garante espaço de sobra para seus
+                arquivos, apps e conteúdos, tudo em um design premium e fluido para o dia a dia.</p>
+            <a href="pagina_carrinho.html#p3" class="botao">Adicionar ao Carrinho</a>
+        </div>
+
+        <div class="produto">
+            <img src="iphone16e.png">
+            <p><b>Iphone 16e</b></p>
+            <p>O iPhone 16e une design moderno e compacto, bateria eficiente e desempenho fluido para o dia a dia. Com
+                tela de alta qualidade e câmera traseira de 48 MP, ideal para fotos, vídeos, aplicativos e redes
+                sociais. Disponível com 128 GB, 256 GB ou 512 GB de armazenamento, oferece praticidade e espaço.</p>
+            <a href="pagina_carrinho.html#p4" class="botao">Adicionar ao Carrinho</a>
+        </div>
+
+        <div class="produto">
+            <img src="iphone16.png">
+            <p><b>Iphone 16</b></p>
+            <p>O iPhone 16 combina design moderno, desempenho rápido e uma experiência fluida para o uso diário. Com
+                tela de alta qualidade e câmeras eficientes, ele é ideal para fotos, vídeos, apps e redes sociais.
+                Disponível com 128 GB, 256 GB ou 512 GB, oferece praticidade e bom desempenho.</p>
+            <a href="pagina_carrinho.html#p5" class="botao">Adicionar ao Carrinho</a>
+        </div>
+
+        <div class="produto">
+            <img src="iphone15.png">
+            <p><b>Iphone 15</b></p>
+            <p>Design moderno, desempenho eficiente e uso fluido no dia a dia. Com tela de alta qualidade e câmeras
+                versáteis, está disponível com 128 GB, 256 GB ou 512 GB de armazenamento, oferecendo espaço ideal para
+                fotos, vídeos, apps e arquivos, oferecendo praticidade e desempenho.</p>
+            <a href="pagina_carrinho.html#p6" class="botao">Adicionar ao Carrinho</a>
+        </div>
+
+        <div class="produto">
+            <img src="iphone14.png">
+            <p><b>Iphone 14</b></p>
+            <p>O iPhone 14 oferece design elegante, ótimo desempenho e uma experiência fluida para o uso diário. Com
+                tela de alta qualidade e câmeras eficientes para fotos e vídeos, é ideal para apps, redes sociais e
+                entretenimento. Disponível com 128 GB, 256 GB ou 512 GB.</p>
+            <a href="pagina_carrinho.html#p7" class="botao">Adicionar ao Carrinho</a>
+        </div>
+
+        <div class="produto">
+            <img src="iphone13.png">
+            <p><b>Iphone 13</b></p>
+            <p>O iPhone 13 entrega ótimo equilíbrio entre performance e praticidade. Com design compacto, tela nítida e
+                câmeras capazes de registrar fotos e vídeos com excelente qualidade, ele acompanha bem a rotina.
+                Disponível com 128 GB, 256 GB ou 512 GB de armazenamento, oferece espaço de sobra.</p>
+            <a href="pagina_carrinho.html#p8" class="botao">Adicionar ao Carrinho</a>
+
+        </div>
+    </div>
+
+    <div id="produtos-react"></div>
+
+
+    <div id="crud-produtos"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        function CrudProdutos() {
+
+            const [produtos, setProdutos] = useState(() => {
+                const dados = localStorage.getItem("produtosTIStore");
+                return dados ? JSON.parse(dados) : [];
+            });
+
+
+
+            const [nome, setNome] = useState("");
+            const [descricao, setDescricao] = useState("");
+            const [imagem, setImagem] = useState("");
+            const [editando, setEditando] = useState(null);
+
+            function salvar(novosProdutos) {
+                setProdutos(novosProdutos);
+                localStorage.setItem(
+                    "produtosTIStore",
+                    JSON.stringify(novosProdutos)
+                );
+            }
+
+            function cadastrar(e) {
+                e.preventDefault();
+
+                if (editando !== null) {
+
+                    const atualizados = produtos.map(produto =>
+                        produto.id === editando
+                            ? {
+                                id: editando,
+                                nome,
+                                descricao,
+                                imagem
+                            }
+                            : produto
+                    );
+
+                    salvar(atualizados);
+                    setEditando(null);
+
+                } else {
+
+                    salvar([
+                        ...produtos,
+                        {
+                            id: Date.now(),
+                            nome,
+                            descricao,
+                            imagem
+                        }
+                    ]);
+                }
+
+                setNome("");
+                setDescricao("");
+                setImagem("");
+            }
+
+            function excluir(id) {
+
+                if (confirm("Deseja excluir este produto?")) {
+
+                    const atualizados =
+                        produtos.filter(
+                            produto => produto.id !== id
+                        );
+
+                    salvar(atualizados);
+                }
+            }
+
+            function editar(produto) {
+
+                setEditando(produto.id);
+                setNome(produto.nome);
+                setDescricao(produto.descricao);
+                setImagem(produto.imagem);
+            }
+
+            return (
+                <div>
+
+                    {/* ===== CARDS DOS PRODUTOS ===== */}
+                    <div className="container">
+                        {produtos.map(produto => (
+                            <div className="produto" key={produto.id}>
+                                {produto.imagem && <img src={produto.imagem} alt={produto.nome} />}
+                                <p><b>{produto.nome}</b></p>
+                                <p>{produto.descricao}</p>
+
+                                <a href="pagina_carrinho.html" className="botao">
+                                    Adicionar ao Carrinho
+                                </a>
+
+                                <br /><br />
+
+                                <button onClick={() => editar(produto)}>Editar</button>
+                                <button onClick={() => excluir(produto.id)}>Excluir</button>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* ===== TÍTULO ABAIXO DOS CARDS ===== */}
+                    <h2 style={{ textAlign: "center", marginTop: "20px" }}>
+                        Gerenciar Produtos
+                    </h2>
+
+                    {/* ===== FORMULÁRIO ===== */}
+                    <form onSubmit={cadastrar} style={{ textAlign: "center", marginTop: "10px" }}>
+
+                        <input
+                            type="text"
+                            placeholder="Nome do produto"
+                            value={nome}
+                            onChange={e => setNome(e.target.value)}
+                            required
+                        />
+
+                        <input
+                            type="text"
+                            placeholder="Descrição"
+                            value={descricao}
+                            onChange={e => setDescricao(e.target.value)}
+                            required
+                        />
+
+                        <input
+                            type="text"
+                            placeholder="Imagem (ex: iphone13.png)"
+                            value={imagem}
+                            onChange={e => setImagem(e.target.value)}
+                        />
+
+                        <br />
+
+                        <button type="submit" style={{ marginTop: "10px" }}>
+                            {editando !== null ? "Atualizar" : "Cadastrar"}
+                        </button>
+
+                    </form>
+                </div>
+            );
+        }
+
+        ReactDOM.createRoot(
+            document.getElementById("crud-produtos")
+        ).render(<CrudProdutos />);
+    </script>
+
+    <footer class="footer">
+        <p>TI Store</p>
+        <p>(99)9999-9999</p>
+        <p>tistore@gmail.com</p>
+    </footer>
+
+</body>
+
+</html>

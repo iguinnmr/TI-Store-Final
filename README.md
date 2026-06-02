@@ -24,6 +24,6 @@ O sistema foi construído utilizando as seguintes tecnologias:
 
 ## Instruções para Execução
 
-Para visualizar o site em sua máquina local, copie o link do site:
+Para visualizar o site em sua máquina local, copie o link:
 ```bash
-https://ti-store-final.vercel.app/
+https://ti-store-final.vercel.app
